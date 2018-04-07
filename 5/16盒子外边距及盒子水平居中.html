@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>外边距</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin-top: 100px;  /*上外边距*/
+            margin-left: 50px;  /*下外边距*/
+        }
+        nav {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /*margin: 100px;  margin 如果只写一个值，表示上下左右都是100像素*/
+            /*margin: 100px 50px;  上下100  左右50*/
+            /*margin: 100px 60px 20px;  上100  左右60 下20*/
+            margin: 100px 70px 40px 10px;  /*上100  右70  下40  左10 （顺时针）*/
+        }
+        p {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 30px auto;  /* 上下30  左右auto（自动）
+                                实现 块级 带有宽度的 盒子 水平居中 */
+        }
+    </style>
+</head>
+<body>
+  <div>外边距</div>
+  <hr/>
+  <nav></nav>
+  <hr/>
+  <p>
+      外边距实现盒子水平居中 <br />
+      1.必须是块级元素 <br />
+      2.盒子必须指定了宽度（width） <br />
+  </p>
+
+</body>
+</html>

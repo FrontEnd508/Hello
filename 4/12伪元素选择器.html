@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+    <style>
+        /* .red 类选择器*/
+        /* :first-child 伪类选择器*/
+        /* ::first-letter 伪元素选择器*/
+
+        p::first-letter {  /*选择 p 标签里面的第一个字*/
+            color: red;
+            font-size: 30px;
+        }
+
+        p::first-line {  /*选择 p 标签里面的第一行*/
+            color: blue;
+        }
+
+        p::selection {  /*在 p 标签里面，鼠标选中文字的时候，可以变化的样式*/
+            color: pink;
+        }
+
+        div::before {  /*在盒子 div 的内部的前面插入*/
+            content: "小莫";   /*content 内容*/
+        }
+
+        div::after {  /*在盒子 div 的内部的后面插入*/
+            content: "2岁";   /*content 内容*/
+        }
+    </style>
+</head>
+<body>
+  <h1>freestyle</h1>
+  <p>一般指即兴的，随性的随意的发挥，例如HIPHOP说唱中的freestyle就是即兴说唱的意思。 <br />
+  吴亦凡爆红的freestyle，其实是嘻哈选手的基本功，也是《中国有嘻哈》节目中的一个环节名称。  <br />
+  《中国有嘻哈》在海选中，吴亦凡比较考验选手的现场应变能力，所以对于有所犹豫的选手，才会给一次机会，吴亦凡会问“你会freestyle吗”“你有freestyle吗”（即来个自由发挥吧）。由于剪辑的效果，搞成似乎见面就问和只会问这一句似的。
+  从吴亦凡口里说出来，freestyle就变得很魔性了，因为他在两个选手难以选择的情况下，酷酷的表情问一句，你有freestyle吗？</p>
+
+  <div>今年</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS的优先级</title>
+    <style>
+        /* 0 ，0 ，0 ，0 特殊性公式（从左往右，从大到小。左边最大）*/
+        .king {  /*类选择器  权重：0 ，0 ，1 ，0 */
+            color: skyblue;
+        }
+        div {  /*标签选择器  权重：0 ，0 ，0 ，1 */
+            color: pink;
+        }
+        /*类选择器和标签选择器两者同时存在时，类选择器 权重大于 标签选择器，优先遵循权重大的类选择器*/
+
+        :first-child {  /*伪类选择器  权重：0 ，0 ，1 ，0 */
+            color: green;
+        }
+        /*类选择器、标签选择器、伪类选择 三者同时存在时*/
+        /*类选择器和伪类选择器 权重大于 标签选择器，所以可排除标签选择器，然后遵循就近原则（哪个样式离结构近，就执行哪个样式）*/
+
+        #wnag {  /*id选择器  权重：0 ，1 ，0 ，0 */
+            color: red;
+        }
+
+        /*最大的 不是选择器*/
+        div {
+            color: blueviolet!important;  /*!important 重要的，级别最高，一旦出现 优先执行*/
+        }
+    </style>
+</head>
+<body>
+  <div class="king" id="wang" style="color: orange">王者荣耀</div>
+  <!--style="color: orange" 行内样式  权重：1 ，0 ，0 ，0-->
+</body>
+</html>
+
+标签（元素）选择器  权重：0 ，0 ，0 ，1 <br />
+类（伪类）选择器    权重：0 ，0 ，1 ，0 <br />
+id选择器          权重：0 ，1 ，0 ，0 <br />
+行内样式           权重：1 ，0 ，0 ，0 <br />
+!important       权重：最大的

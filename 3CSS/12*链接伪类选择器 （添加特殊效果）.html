@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>链接伪类选择器</title>
+    <style>
+        /*注意：顺序尽量不要颠倒，按照lvha的顺序，（love hate记忆法，或者lv包包非常hao）*/
+
+        /*!*未访问的链接*!*/
+        /*a:link {*/
+            /*font-size: 16px;*/
+            /*color: gray;*/
+            /*font-weight: bold;*/
+        /*}*/
+
+       /*!*已访问的链接 *!*/
+        /*a:visited {*/
+            /*font-size: 16px;*/
+            /*color: orange;*/
+            /*font-weight: bold;*/
+        /*}*/
+
+        /*!*鼠标移动到链接上时*!*/
+        /*a:hover {*/
+            /*font-size: 16px;*/
+            /*color: red;*/
+            /*font-weight: bold;*/
+        /*}*/
+
+        /*!*选定的链接 当我们点击别松鼠标时显示的状态*!*/
+        /*a:active {*/
+            /*font-size: 16px;*/
+            /*color: green;*/
+            /*font-weight: bold;*/
+        /*}*/
+        /**/
+
+        /*实际工作之中，我们简单写链接伪类选择器就好了*/
+        a {
+            font-weight: 700;
+            font-size: 16px;
+            color: gray;
+        }
+        /*:hover是链接伪类选择器，鼠标经过*/
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+  <!--伪类选择器中的 链接伪类选择器 主要针对于 a-->
+  <div> <a href="#">秒杀</a></div>
+  <div> <a href="#">抢购</a></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后代选择器</title>
+    <style>
+        /*后代选择器，把外层标签写在前面，内层标签写在后面，中间用空格隔开。当标签发生嵌套时，内层标签就成为外层标签的后代。*/
+        /*类别选择器 标记选择器 {属性1:属性值1;属性2:属性值2;}*/
+
+        /*div p {*/
+            /*color: pink;*/
+        /*}*/
+
+       .wangjianlin p {  /* .wangjianlin 里面的 p */
+           color: skyblue;
+       }
+    </style>
+</head>
+<body>
+  <p>王者荣耀</p>
+
+  <div class="wangjianlin">
+      <p>王思聪</p>
+  </div>
+
+  <div>
+      <p>王宝强</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多媒体播放</title>
+</head>
+<body>
+ <!--embed 可以用来插入各种多媒体，可以先把文件上传到网络，再复制视频在网络的链接-->
+ <embed src='http://player.youku.com/embed/XMzE0ODM1ODg1Ng==' iframe height=498 width=510 frameborder=0 'allowfullscreen'></embed><br/><br/>
+ <embed src="http://music.baidu.com/song/100575177?fm=altg_new3 "></embed>
+
+ <h4>音乐播放</h4>
+ <!--audio 不是自动播放,autoplay是否自动播放,controls是否显示播放控件,loop="循环次数"，当loop="-1",或者只有loop时，表示无限循环-->
+ <audio src="网易游戏%20-%20西海-思旧赋.mp3" autoplay controls loop="2"></audio><br/><br/>
+ <!--当前 audio 只支持3种格式：Ogg/orbis,MP3,Wav-->
+
+ <h4>音频播放</h4>
+ <!--为了浏览器兼容，我们需要做3种音乐文件-->
+ <audio autoplay controls>
+     <source src="网易游戏%20-%20西海-思旧赋.mp3"/>
+     <source src="****.Ogg"/>
+     <source src="****.Wav"/>
+     您的浏览器不支持播放音乐
+ </audio>
+
+ <h1>1111111111111</h1>
+ <video src="/Users/jiao/Desktop/MGJ/标签页发表/标签页发表动画_1.mp4" autoplay controls width="500"></video> <!--当前 video 只支持3种格式：Ogg,MP4,webM--><br/><br/>
+ <video src="./.././../../1.mp4" autoplay controls width="500"></video> <!--当前 video 只支持3种格式：Ogg,MP4,webM--><br/><br/>
+
+ <h4>视频播放</h4>
+ <video src="../视频交互动画1.mp4" autoplay controls width="500"></video> <!--当前 video 只支持3种格式：Ogg,MP4,webM--><br/><br/>
+
+ <!--为了浏览器兼容，我们需要做3种视频文件-->
+ <video autoplay controls>
+     <source src="视频交互动画1.mp4"/>
+     <source src="*****.Ogg"/>
+     <source src="*****.webM"/>
+     您的浏览器不支持播放视频
+ </video>
+
+</body>
+</html>

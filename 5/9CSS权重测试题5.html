@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+       div div div div div div div div div div div div {  /*div 表前选择器，权重：0001，12个div权重为0，0，0，11 */
+           color: red;
+       }
+        .me {  /*.me 是类选择器，权重0010*/
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+  <div>
+      <div>
+          <div>
+              <div>
+                  <div>
+                      <div>
+                          <div>
+                              <div>
+                                  <div>
+                                      <div>
+                                          <div>
+                                              <div class="me">这行文字颜色是什么</div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

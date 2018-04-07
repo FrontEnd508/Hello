@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>寝室学生信息</title>
+</head>
+<body>
+  <!--首先创建一个表单域，用<form></form>包裹，cation为提交地址-->
+  <form action=" ">
+
+      <!--区域打包用<fieldset></fieldset>-->
+      <fieldset>
+          <legend>学生档案</legend>
+
+          <!--点文字定位光标用<label></label>包裹-->
+          <label>姓名：<input type="text" placeholder="请输入学生姓名"/></label><br/><br/>
+          <label>手机：<input type="tel"/></label><br/><br/>
+          <label>邮箱：<input type="email"/></label><br/><br/>
+
+          <!--下拉选项-->
+          <label>所属学院：<input type="text" placeholder="请选择学院" list="xueyuan"/></label>
+          <datalist id="xueyuan">
+              <option>设计学院</option>
+              <option>外语学院</option>
+              <option>机械学院</option>
+              <option>计算机学院</option>
+          </datalist><br/><br/>
+
+          <label>出生日期：<input type="date"/></label><br/><br/>
+          <label>成绩：<input type="number"/></label><br/><br/>
+
+          <!--提交按钮-->
+          <input type="submit"/>
+
+          <!--重置按钮-->
+          <input type="reset"/>
+
+      </fieldset>
+  </form>
+</body>
+</html>

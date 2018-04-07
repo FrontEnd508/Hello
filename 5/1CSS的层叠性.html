@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS层叠性</title>
+    <style>
+        div {
+            color: pink;
+            font-size: 12px;
+        }
+        div {
+            color: skyblue;
+        }
+    </style>
+</head>
+<body>
+  <div>123456789</div>
+  1. 样式冲突时，遵循就近原则（哪个样式离结构近，就执行哪个样式）
+  2. 样式不冲突时，不会层叠
+</body>
+</html>

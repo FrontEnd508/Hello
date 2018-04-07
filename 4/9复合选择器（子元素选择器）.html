@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子元素选择器</title>
+    <style>
+        .nva li {  /*中间用空格隔开，是后代选择器，可以选择儿子、孙子、重孙子...*/
+            color: red;
+        }
+
+        /*子元素选择器，只能选择作为某元素子元素的元素，（只能选择亲儿子，不能选择孙子、重孙子）*/
+        /*父级标签 > 子级标签 {属性1:属性值1;属性2:属性值2;}*/
+        /*符号左右两侧各保留一个空格*/
+        .nva > li {  /*中间用>大于号隔开，是子元素选择器，只可以选择亲儿子*/
+            color: skyblue;
+        }
+    </style>
+</head>
+<body>
+  <ul class="nva">
+      <li>一级菜单
+        <ul>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+        </ul>
+      </li>
+  </ul>
+</body>
+</html>

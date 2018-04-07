@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: #000000;
+        }
+
+        a {
+            width: 200px;
+            height: 50px;
+            font-size: 25px;
+            color: red;
+            /*background-color: orange;*/
+            display: inline-block;  /*行内标签模式转换为行内块元素显示模式*/
+            text-align: center; /*设置文字水平居中对齐*/
+
+            /*使用技巧：在一行内的盒子内，我们设定行高等于盒子高度，就可以使文字垂直居中*/
+            line-height: 50px;
+
+            /*文本装饰*/
+            text-decoration: none;  /* none 取消下划线，文本装饰*/
+                                    /*underline 定义文本下划线，链接自带下划线*/
+                                    /*overline 定义文本上的一条线*/
+                                    /*line-through 定义文本删除线（穿过文本的一条线）*/
+        }
+
+        a:hover {  /*链接伪类选择器（鼠标经过时添加特效）*/
+            background: url("images/11.jpg") no-repeat;
+        }
+    </style>
+</head>
+<body>
+  <!--<a href="#"></a>表示链接，默认自带下划线-->
+  <a href="#">专区说明</a>
+  <a href="#">申请资格</a>
+  <a href="#">兑换奖励</a>
+  <a href="#">下载游戏</a>
+</body>
+</html>

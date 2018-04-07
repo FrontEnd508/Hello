@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="UTF-8">
+     <title>合并单元格</title>
+  </head>
+  <body>
+  <h3>表格1</h3>
+    <table width="800" height="300" border="1" cellspacing="0" align="center">
+	  <caption>火影忍者演员表</caption>
+	  <!--注意：合并时保留上面和左边的-->
+     <thead>
+	  <tr>
+	     <th>姓名</th>
+		 <th>年龄</th>
+		 <th>性别</th>
+      </tr>
+	 </thead>
+	 
+	 <tbody>
+	  <tr>
+	    <td>鸣人</td>
+		<td>男</td>
+		<!--跨行合并-->
+		<td rowspan="2">18</td>
+	  </tr>
+	  
+	  <tr>
+	    <td>佐助</td>
+		<td>男</td>
+	  </tr>
+	  
+	 </tbody>
+	</table>
+	
+	<h3>表格2</h3>
+    <table width="800" height="300" border="1" cellspacing="0" align="center">
+	  <caption>火影忍者演员表</caption>
+	  
+     <thead>
+	  <tr>
+	     <th>姓名</th>
+		 <th>年龄</td>
+		 <th>性别</td>
+      </tr>
+	 </thead>
+	 
+	 <tbody>
+	  <tr>
+	    <td>鸣人</td>
+		<td>男</td>
+		<td>18</td>
+	  </tr>
+	  
+	  <tr>
+	    <td>佐助</td>
+		<!--跨列合并-->
+		<td colspan="2">男</td>
+	  </tr>
+	  
+	 </tbody>
+	</table>
+  </body>
+</html>

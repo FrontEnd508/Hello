@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多背景图片</title>
+    <style>
+        /*多背景图片设置，每组属性之间用 逗号 隔开*/
+        /*若设置的多个背景图片之间存在交集（重叠），前面的背景图会覆盖在后面的背景图 之上*/
+        div {
+            width: 1000px;
+            height: 1000px;
+            background: url("images/11.jpg") no-repeat left top,
+            url("images/123.png") no-repeat right top pink;
+            /*为了避免背景颜色将图像覆盖，背景色通常都定义在最后一组上*/
+        }
+    </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

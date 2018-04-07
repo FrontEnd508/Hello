@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {  /*清空默认的内外边距*/
+            margin: 0px;
+            padding: 0px;
+        }
+        ul {
+            list-style: none;  /*取消列表自带的小点*/
+        }
+        .searchPic {  /*设置最大的盒子*/
+            width: 238px;
+            height: 294px;
+            border: 1px solid #d9e0ee;  /*设置边框*/
+            border-top: 3px solid #ff8400;  /*设置顶部边框线，注意：border-top必须写在border的下方 （就近原则）*/
+            margin: 100px; /*设置外边距*/
+        }
+        .searchPic h3 {  /*设置标题盒子*/
+            height: 35px;
+            line-height: 35px;  /*设置文字垂直居中，行高为height*/
+            border-bottom: 1px solid #edeef0;
+            font-size: 16px;
+            font-weight: normal;  /*设置粗体不加粗*/
+            padding-left: 12px;  /*设置h3的左内边距为12，因为这个h3我们没有给width，继承的父亲的宽度，所以h3这个盒子没有变宽*/
+        }
+        .searchPic img {  /*插入图片，相当于一个盒子*/
+            width: 200px;
+            height: 150px;
+            margin:7px 0px 0px 8px;  /*设置图片外边距，主要是上外边距和左外边距*/
+        }
+        .searchPic ul li a {  /*设置文字的属性*/
+            font-size: 12px;
+            color: #666666;
+            text-decoration: none;  /* none 取消下划线，文本装饰*/
+        }
+        .searchPic ul {  /*设置ul这个盒子的属性*/
+            margin-left: 8px;  /*设置ul盒子的左外边距*/
+        }
+        .searchPic ul li {  /*设置li这个盒子的属性*/
+            padding-left: 10px;  /*设置li盒子的左内边距*/
+            line-height: 26px;  /*设置行高（上一行文字的底部到这一行文字的底部 的距离）*/
+            background: url("123.jpg") no-repeat left center;  /*背景图片，不平铺,左对齐，水平居中*/
+        }
+        .searchPic ul li a:hover {  /*设置链接伪类选择器，鼠标经过时特效*/
+            color: orange;
+            text-decoration: underline; /*添加下划线*/
+        }
+    </style>
+</head>
+<body>
+  <div class="searchPic">
+      <h3>探索趣图</h3>
+      <img src="1.jpg">
+      <ul>
+          <li><a href="#">量子传输突破：NASA首次用城市网络</a></li>
+          <li><a href="#">太空揭秘：遇到太阳风暴，宇航员怎么</a></li>
+          <li><a href="#">太空揭秘：遇到太阳风暴，宇航员怎么</a></li>
+      </ul>
+  </div>
+</body>
+</html>

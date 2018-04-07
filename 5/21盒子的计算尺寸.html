@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子的计算尺寸</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border: 5px solid red;  /*4个边框，上下左右各加5像素 (5+5)*/
+            padding: 10px;  /*内边距 左右各加10像素 (10+10)*/
+            margin: 20px;  /* 外边距 左右各加20像素 (20+20)*/
+            /*外盒尺寸计算*/
+            /*元素空间尺寸：width+border+padding+margin*/
+                        /*100  +(5+5) +(10+10) +(20+20) =170*/
+
+            /*内盒尺寸计算*/
+            /*实际尺寸：width+border+padding*/
+                    /*100  +(5+5) +(10+10) =130*/
+        }
+    </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
+
+注意：
+1.width和height 仅适用于块级元素，对行内元素无效（img标签和input除外）
+2.计算盒子总高度时，还应考虑两个盒子垂直外边距合并的情况
+3.如果盒子没有给定宽度/高度 或者 继承父亲的宽度/高度，则padding不会影响盒子大小

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>外边距合并</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        /*相邻块元素垂直外边距的合并
+        上下两个相邻的块元素，如果上面的块元素有下边距（margin-bottom），下面的块元素有上边距（margin-top），
+        则他们之间的垂直间距不是margin-bottom和margin-top之和，而是两者中较大的一个。*/
+        div:first-child {
+            margin-bottom: 100px;
+        }
+        div:last-child {
+            background-color: purple;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+  <div></div> <!--块元素-->
+  <div></div>
+</body>
+</html>

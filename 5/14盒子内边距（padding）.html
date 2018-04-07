@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子内边距</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        div:nth-child(2) {
+            padding-left:20px;  /*左内边距*/
+        }
+        div:nth-child(3) {
+            padding-top:20px;  /*上内边距*/
+        }
+        div:nth-child(4) {
+            padding: 20px;  /*padding 如果只写一个值，表示上下左右都是20像素*/
+        }
+        div:nth-child(5) {
+            padding: 10px 40px;  /*上下10，左右40*/
+        }
+        div:nth-child(6) {
+            padding: 10px 40px 60px;  /*上10，左右40，下60*/
+        }
+        div:nth-child(7) {
+            padding: 10px 40px 60px 100px;  /*上10，右40，下60，左100 （顺时针）*/
+        }
+    </style>
+</head>
+<body>
+  <div>内边距就是内容与边框的距离</div>
+  <div>左内边距</div>
+  <div>上内边距</div>
+  <div>20px</div>
+  <div>10px 40px <br /> 上下10，左右40</div>
+  <div>10px 40px 60px <br /> 上10，左右40，下60 哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或</div>
+  <div>10px 40px 60px 100px <br /> 上10，右40，下60，左100 （顺时针）<br />哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或</div>
+</body>
+</html>

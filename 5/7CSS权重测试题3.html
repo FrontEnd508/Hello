@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div p {  /* div 是标签属性，权重0001  p 是元素标签，权重是0001  所以该权重为0002*/
+            color: red;
+        }
+        #father { /*权重的继承性，继承权重为0*/
+            color: orange;
+        }
+        p.c2 {  /*p 是元素标签，权重是0001 , .c2 是类选择器，权重0010  所以该权重为0011*/
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+  <div id="father" class="c1">
+      <p class="c2">
+          问这行文字是什么颜色
+      </p>
+  </div>
+</body>
+</html>

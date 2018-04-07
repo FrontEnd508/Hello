@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>权重叠加</title>
+    <style>
+        li {  /*标签选择器 权重：0 ，0 ，0 ，1*/
+            color: pink;
+        }
+        ul li {  /*后代选择器 ul 里面的li ,ul权重：0001,li权重：0001，则ul li 权重叠加之后为0002*/
+            color: green;
+        }
+
+        .xingming {   /*类选择器  nav权重：0 ，0 ，1 ，0 继承的权重是0，所以li的权重是0，0，0，0*/
+            color: red;
+        }
+    </style>
+</head>
+<body>
+  <nav class="xingming">
+      <ul>
+          <li>李白</li>
+          <li>程咬金</li>
+          <li>鲁班</li>
+      </ul>
+  </nav>
+</body>
+</html>
+
+div ul li      叠加之后权重：0，0，0，3
+.nav ul li     叠加之后权重：0，0，1，2
+a:hover        叠加之后权重：0，0，1，1
+.nav a         叠加之后权重：0，0，1，1
+#nav p         叠加之后权重：0，1，0，1
+
+注意：
+1.数位之间没有进制，0，0，0，5 + 0，0，0，5 = 0，0，0，10 ，所以不会存在10个div=1个类选择器的情况
+2.继承的权重是0

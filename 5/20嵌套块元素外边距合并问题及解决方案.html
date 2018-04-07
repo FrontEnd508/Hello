@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .father {
+            height: 300px;
+            width: 300px;
+            background-color: pink;
+            margin-top: 100px;
+            /*解决外边距合并（塌陷）问题*/
+            /*border: 1px solid red;   1.为父元素加一个1像素的边框*/
+            /*padding: 1px;  2.为父元素加一个1元素的内边距*/
+            overflow: hidden;  /*3.为父元素添加overflow: hidden;*/
+        }
+        .son {
+            height: 200px;
+            width: 200px;
+            background-color: purple;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+  <div class="father">
+      <div class="son"></div>
+  </div>
+</body>
+</html>

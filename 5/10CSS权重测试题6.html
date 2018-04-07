@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .c1 .c2 {  /* .c1 和 .c2 是类选择器，权重0010，所以.c1 和 .c2权重为0020，但是权重继承为0*/
+            color: blue;
+        }
+
+        #box1 div {  /* #box1 权重0100，div 标签选择器，权重0001，所以#box1 div权重是0101，
+                        这时候根据CSS的就近原则哪个样式离结构近，就执行哪个样式）*/
+            color: yellow;
+        }
+
+        div #box3 {  /*div 标签选择器，权重0001，#box3 id选择器，权重0100，所以div #box3权重为0101*/
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+  <div id="box1" class="c1">
+      <div id="box2" class="c2">
+          <div id="box3" class="c3">
+              文字颜色
+          </div>
+      </div>
+  </div>
+</body>
+</html>

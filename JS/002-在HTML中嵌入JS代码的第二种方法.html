@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在HTML中嵌入JS代码的第二种方法</title>
+    <!--独立的脚本块，其中可以编写JS代码-->
+    <script type="text/javascript">
+//        在整个HTML页面加载的时候，自上而下的顺序依次执行，而且alert方法具有阻塞作用，当用户点击"确定"之后，alert语句才算执行完毕
+        window.alert("Hello Word!");
+        alert("Hello");  <!--window.alert('Hello')中的window.可以省略  -->
+    </script>
+</head>
+<body>
+<input type="button" value="点击">
+</body>
+</html>

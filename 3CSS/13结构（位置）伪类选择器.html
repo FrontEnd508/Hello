@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结构（位置）伪类选择器</title>
+    <style>
+        /*选择其父元素的首个子元素，用:first-child*/
+        li:first-child {
+            color: pink;
+        }
+
+        /*选择其父元素的最后一个子元素，用:last-child*/
+        li:last-child {
+            color: green;
+        }
+
+        /*选择其父元素的第N个子元素，用:nth-child(n)*/
+        li:nth-child(4) {
+            color: orange;
+        }
+
+        /*从第一个子元素开始数，选择所以的奇数(odd 或者2n-1 或者2n+1 )或者偶数(even 或者2n)的子元素*/
+        li:nth-child(odd) {
+            color: skyblue;
+        }
+
+        /*选择所以的倍数的子元素（n是从0开始的）*/
+        li:nth-child(3n) {  /*选择所以 3 的倍数的子元素*/
+            color: skyblue;
+        }
+
+        /*倒数，从最后一个子元素开始数，选择所以的奇数(odd 或者2n-1 或者2n+1 )或者偶数(even 或者2n)的子元素*/
+        li:nth-last-child(odd) {
+            color: red;
+        }    </style>
+</head>
+<body>
+  <ul>
+      <li>第一</li>
+      <li>第二</li>
+      <li>第三</li>
+      <li>第四</li>
+      <li>第五</li>
+      <li>第六</li>
+      <li>第七</li>
+  </ul>
+</body>
+</html>

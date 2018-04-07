@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景缩放</title>
+    <style>
+        body {
+            background-color: skyblue;
+        }
+
+        div {
+            width: 600px;
+            height: 500px;
+            background: #ffc0cb url("images/11.jpg") no-repeat;
+
+            /*我们插入的图片 img 直接通过 width 和 height 设置即可*/
+            /*背景图片设置大小 background-size */
+            /*background-size: 90px;  我们尽量只改一个值，防止缩放失真扭曲*/
+
+            /*background-size: 50%;  把背景图片缩放为原来图片的一半大小*/
+
+            /*background-size: contain;  自动调整缩放比例，保证图片始终 完整 的显示在背景区域（即如果图片的宽度或者高度 有一个和盒子一样大了，就不再进行缩放）*/
+
+            /* background-size: cover;  自动调整缩放比例，保证图片始终填充满背景区域，如有溢出部分则会被隐藏（即图片进行等比缩放，一定要保证图片宽度和高度同时满足盒子大小）*/
+        }
+    </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

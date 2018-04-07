@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+    <style>
+        /*标签选择器，如：p  div  h1   span   em   i   这些标签作为选择器*/
+        /*基本语法格式：标签名 {属性1:属性值1;属性2 :属性值2;}*/
+               /*或者：元素名 {属性1:属性值1;属性2 :属性值2;}*/
+        p {
+            color: blue;
+            font:bold 18px "\5B8B\4F53";
+        }
+
+        /*类选择器，*/
+        /*基本语法格式：.类名 {属性1:属性值1;属性2 :属性值2;}*/
+        .mingren {   /*声明类样式*/
+            color: orange;
+            font:bold 14px "\5B8B\4F53";
+        }
+        .zuozhu {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+<p>白展堂</p>
+<p>李大嘴</p>
+<p>吕秀才</p>
+<div class="mingren">鸣人</div>  <!-- 引用类样式    class 是类的意思-->
+<div class="zuozhu">佐助</div>
+<div>卡卡西</div>
+</body>
+</html>

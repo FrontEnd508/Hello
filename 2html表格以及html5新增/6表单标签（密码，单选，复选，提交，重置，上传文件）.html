@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+     <title>表单标签</title>
+  </head>
+  <body>
+  <!--<input />  单标签，br hr img input-->
+  用户名：<input type="text"/> <!--这是一个文本框--> <br />
+  用户名：<input type="text" value="1111"/> <!--value表示默认文本内容--> <br />
+  密 码：<input type="password"/> <!--这是一个密码输入框--> <br />
+  密 码：<input type="password" maxlength="6"/> <!--maxlength表示最多输入的数值--> <br />
+  性别：<input type="radio" name="sex"/>女 <input type="radio" name="sex"/>男
+  <!--这是一个单选框，如果是一组，我们通过相同的name值来实现--> <br />
+  
+  爱好：<input type="checkbox" name="hobby"/>足球 <input type="checkbox" name="hobby"/>篮球 <input type="checkbox" name="hobby"/>乒乓球
+  <!--复选框  可以同时选择多个--><br />
+  喜欢的游戏：<input type="radio" name="game" checked="checked"/>英雄联盟 <input type="radio" name="game"/>王者荣耀
+  <!--默认选项--><br />
+  
+  搜索：<input type="button" value="搜索"/> <!--普通按钮--><br />
+  <input type="submit"/> <input type="submit" value="提交按钮"/> <!--提交按钮，后面的value可加可不加--><br />
+  <input type="reset"/> <input type="reset" value="重置表单"/><!--重置按钮，后面的value可加可不加--><br />
+  
+  <input type="image" src="按钮图片.png" width="100" /><!--图像按钮--><br />
+  上传头像：<input type="file"/> <!--选择文件按钮--><br />
+  </body>
+</html>

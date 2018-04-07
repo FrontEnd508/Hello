@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS背景</title>
+    <style>
+        .one {
+            height: 500px;
+            width: 900px;
+            background-color: pink;  /*背景颜色*/
+            background-image: url(images/11.jpg);  /*背景图片*/
+            background-repeat: no-repeat;  /*背景是否平铺：repeat （默认，图像将在垂直和水平方向平铺）*/
+                                                    /*repeat-y  图像在垂直方向（纵向）上平铺*/
+                                                    /*repeat-x  图像在水平方向（横向）上平铺*/
+                                                    /*no-repeat  图像不平铺*/
+
+            /*1.背景位置，利用方位名词 top bottom center left right 来更改背景图片位置*/
+            /*方位名词没有顺序，谁在前面都可以*/
+            /*background-position: left top;  背景位置，默认是左上角*/
+            /*background-position: top right;  背景位置：右上角*/
+            /*background-position: right bottom;  背景位置：右下角*/
+            /*background-position: center center;  背景位置：水平居中*/
+            background-position: left;  /*如果方位名词只写一个，则另外一个默认为 center */
+        }
+
+        .two {
+            height: 500px;
+            width: 900px;
+            background-color: skyblue;
+            background-image: url(images/11.jpg);
+            background-repeat: no-repeat;
+            background-position:50px 20px;  /*2.背景位置，精确单位：50像素（x坐标），20像素(y坐标，y坐标越往下，数值越大)*/
+        }
+
+        .three {
+            height: 500px;
+            width: 900px;
+            background-color: blue;
+            background-image: url(images/11.jpg);
+            background-repeat: no-repeat;
+            background-position:10px center;  /*3.背景位置，混搭.10px center 水平10px，垂直居中*/
+                                                             /*center 10px 水平居中，垂直10px*/
+        }
+    </style>
+</head>
+<body>
+  <div class="one">
+
+  </div>
+
+  <div class="two">
+
+  </div>
+
+  <div class="three">
+
+  </div>
+</body>
+</html>

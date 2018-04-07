@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子边框</title>
+    <style>
+        div {
+            height: 200px;
+            width: 300px;
+            border-width: 10px;  /*边框宽度 粗细*/
+            border-color: pink;  /*边框颜色*/
+            /*border-style: solid;  边框样式：实线   用得最多*/
+            /*border-style: dashed; 边框样式：虚线*/
+            /*border-style: dotted; 边框样式：点线*/
+            border-style: double; /*边框样式：双线*/
+        }
+
+        input {
+            border: 0;  /*设置没有边框*/
+        }
+        .user {
+            border-width: 1px;
+            border-color: red;
+            border-style: solid;
+        }
+        .nc {
+            border-top-width: 1px;  /*上边框宽度*/
+            border-top-color: red;  /*上边框颜色*/
+            border-top-style: solid;  /*上边框样式：实线*/
+
+            border-bottom-width: 1px;  /*下边框宽度*/
+            border-bottom-color: red;  /*下边框颜色*/
+            border-bottom-style: solid;  /*下边框样式：实线*/
+        }
+        .email {
+            border-top: 1px solid skyblue;  /*上边框 宽度 样式 颜色 一起写*/
+            border-bottom: 1px solid skyblue;  /*下边框 宽度 样式 颜色 一起写*/
+        }
+        .tel {
+            border: 1px solid green;  /*综合写法*/
+        }
+    </style>
+</head>
+<body>
+  <div>我是一个盒子</div>
+  <hr/>
+
+  用户名：<input type="text" class="user"/><br /><br />
+  昵 称：<input type="text" class="nc"/><br /><br />
+  邮 箱：<input type="email" class="email"/><br /><br />
+  手 机：<input type="tel" class="tel"/><br /><br />
+</body>
+</html>

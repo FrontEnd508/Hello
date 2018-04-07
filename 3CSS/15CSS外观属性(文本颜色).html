@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS外观属性(文本颜色)</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        li:nth-child(2) {
+            color: #00FF00;
+        }
+
+        #rgb {
+            color: rgb(203,35,224);
+        }
+    </style>
+</head>
+<body>
+<h3>color：定义文本颜色的取值方式：</h3>
+<ol>   <!--有序列表-->
+    <li class="red">预定义颜色值，如red,blue,green等</li>
+    <li>十六进制，实际工作中，十六进制是最常用的定义颜色方式，如#FF0000，#FF6600等</li>
+    <li id="rgb">RGB代码，如红色可以表示为rgb(255,0,0)或者rgb(100%,0%,0%),注意：百分比颜色值取值为0时，不可省略百分号，必须写0%</li>
+</ol>
+</body>
+</html>
